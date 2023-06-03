@@ -1,0 +1,24 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.address p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
+  padding-left: 30px;
+}
+.tokenBody {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+.tokens {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}

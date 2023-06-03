@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+}
+button,
+input {
+  font-family: 'Nunito', sans-serif;
+  border: 0px;
+}
+input:focus {
+  outline: none;
+}
+/* SCROLLBAR */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #390554 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #390554;
+  border-radius: 10px;
+  border: 0px;
+}
+
+/* APP STYLES */
+
+.app {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+}
+.body {
+  background: rgba(0, 0, 0, 0.57);
+  flex: 1;
+}
+.footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: #f30050;
+}
