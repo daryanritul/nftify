@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './AddressScreen.css';
 
 import Searchbar from '../../Components/Searchbar/Searchbar';
@@ -8,7 +8,7 @@ const AddressScreen = () => {
   const { state } = useContext(context);
   return (
     <div className="address">
-      <Searchbar />
+      <Searchbar search={searchToken} setSeatch={setSearchToken} />
       {state.loading ? (
         <p>Loading...</p>
       ) : (
