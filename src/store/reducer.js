@@ -1,4 +1,10 @@
-import { SET_DATA, START_FETCH, UPDATE_MENU,END_FETCH } from './actions.types';
+import {
+  SET_DATA,
+  START_FETCH,
+  UPDATE_MENU,
+  END_FETCH,
+  SET_SEARCH,
+} from './actions.types';
 
 const reducer = (state, { payload, type }) => {
   switch (type) {
@@ -6,6 +12,11 @@ const reducer = (state, { payload, type }) => {
       return {
         ...state,
         menu: payload,
+      };
+    case SET_SEARCH:
+      return {
+        ...state,
+        search: payload,
       };
     case SET_DATA:
       return {

@@ -6,4 +6,5 @@ export const initialState = {
   menu: 0,
   pairs: [],
   loading: false,
+  search: '',
 };

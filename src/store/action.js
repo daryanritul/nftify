@@ -7,6 +7,12 @@ export const updateMenu = value => dispatch => {
   });
 };
 
+export const setSearch = data => dispatch => {
+  dispatch({
+    type: SET_DATA,
+    payload: data,
+  });
+};
 export const setData = data => dispatch => {
   dispatch({
     type: SET_DATA,
